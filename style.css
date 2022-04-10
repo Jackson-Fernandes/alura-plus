@@ -1,0 +1,202 @@
+/***********ALL**************/
+
+:root{
+
+    --fundo: #00030C;
+    --branco_principal: #FFFFFF;
+    --botao_azul: #167BF7;
+    --descricao_textos: #C0C0C0;
+    --font_principal: 'Inter';
+    --botao_azul_efeito: #4796f7;
+
+    --botaoComboBorderCircular: 5px;
+    --botaoComboPadding: 1em;
+    --botaoComboBorder: 2px solid;
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: var(--branco_principal);
+}
+
+body{
+
+    background-color: var(--fundo);
+    color: var(--branco_principal);
+    font-family: var(--font_principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container{
+
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container_botao{
+
+    border-radius: var(--botaoComboBorderCircular);
+    padding: var(--botaoComboPadding);
+    display: block;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.titulo_sections{
+
+    font-size: 48px;
+    margin-bottom: 0.25em;
+}
+
+.descricao{
+
+    color: var(--descricao_textos);
+}
+
+.imagem_container_secundario{
+
+    width: 80%;
+}
+
+.container_botao:hover{
+
+    transition: 400ms all;
+    background-color: var(--botao_azul_efeito);
+    color: var(--fundo);
+}
+/***********COMBO**************/
+
+.principal{
+
+    background-image: url("images/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.caixa_principal{
+
+    margin: 0 6em;
+    padding: 6em;
+}
+
+.combo_titulo{
+
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.logo_combo{
+
+    margin: 1em 0 2em 0;
+}
+
+.botaoAzul{
+
+    border: var(--botaoComboBorder) var(--botao_azul);
+    background-color: var(--botao_azul);
+}
+
+.botaoTransparente{
+
+    border: var(--botaoComboBorder) white;
+}
+
+.combo_aviso{
+
+    font-size: 12px;
+}
+
+/****Asssista seu jeito****/
+
+.secundario{
+
+    align-items: center;
+    margin: 0 10em;
+}
+
+.caixa_descricao{
+
+    padding: 2.5em;
+}
+
+/****Assine Combo +****/
+
+.botaoAzul_secundario{
+
+    border: var(--botaoComboBorder) var(--botao_azul);
+    background-color: var(--botao_azul);
+    display: inline-block;
+    margin-top: 1em;
+}
+
+/****Dispositivos****/
+
+.dispositivos{
+
+    text-align: center;
+}
+
+.dispositivos_lista{
+
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 3.5em 0 4.75em 0;
+}
+
+.descricao_dispositivos{
+
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/****Footer****/
+
+footer{
+
+    text-align: center;
+    margin: 5em 0;
+    padding: 0 21em;
+}
+
+.logo_footer{
+
+    margin: 1.5em 0;
+}
+
+.lista_footer{
+
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.lista_footer li{
+
+    margin: 0 0.5em;
+}
+
+.decricao_footer{
+
+    font-size: 14px;
+    margin-top: 1.5em;
+}
+
+.lista_footer a:hover{
+
+    transition: 250ms all;
+    color: var(--botao_azul);
+    text-decoration: underline;
+}
+
+.lista_footer a:active{
+
+    color: purple;
+}
